@@ -26,8 +26,8 @@ html{
 }
 
 .page-wrapper .preview{
-    background-color:  hsl(30, 3%, 87%);
-    border: 1px solid gray;
+    background-color:  #dfdedd;
+    border: 1px solid #808080;
     height: 20vh;
     width: 30vw;  
 }
@@ -38,14 +38,14 @@ html{
     display: grid;
     grid-gap: 30px;
     grid-template-columns: auto auto;
-    background-color: hsl(30, 3%, 87%);
+    background-color: #dfdedd;
     padding: 30px;
     margin: 10px;
-    border: solid 1px gray; 
+    border: solid 1px, #000000; 
     border-radius: 5px;
 }
 .control-wrapper{
-    background-color: hsl(28, 79%, 81%);
+    background-color: #f5cca8;
     padding: 20px;
     color: black;
     align-items: center;
@@ -56,7 +56,7 @@ h3{
     border: solid 2px black;
     border-radius: 10px;
     text-align: center;
-    box-shadow: coral 5px 3px;    
+    box-shadow: #ff7f50, 5px 3px;    
 }
 
 .control-field{
@@ -74,7 +74,7 @@ h3{
     border-radius: 10px;
     width: 50%;
     height: 10px;
-    background: white;
+    background: #ffffff;
     opacity: 0.5;
     -webkit-transition: .2s;
     transition: opacity .2s;
@@ -87,8 +87,8 @@ h3{
     height: 15px;
     margin-top: -2px;
     border-radius: 20px;
-    border: solid black 3px;
-    background: white;
+    border: solid #000000 3px;
+    background: #ffffff;
     cursor: pointer;
 
     box-shadow: 1px 1px 1px #000000;
@@ -104,7 +104,10 @@ h3{
     height: 10px;
     cursor: pointer;
     box-shadow: 1px 1px 1px #0000;
-    background: coral;
+    background: #ff7f50;
     border-radius: 2px;
-    border: 1px, solid, gray;
+    border: 1px, solid, #808080;
+}
+.slider:focus::-webkit-slider-runnable-track{
+    background: #f37a48;
 }
