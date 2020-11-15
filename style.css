@@ -6,7 +6,7 @@
 }
 
 html{
-    font-size:  16px;
+    font-size:  14px;
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
     position: relative;
@@ -34,12 +34,12 @@ html{
 
 
 .customization-grid{
-    width: 65%;
+    width: 80%;
     display: grid;
     grid-gap: 30px;
     grid-template-columns: auto auto;
     background-color: #dfdedd;
-    padding: 30px;
+    padding: 20px;
     margin: 10px;
     border: solid 1px, #000000; 
     border-radius: 5px;
@@ -52,15 +52,29 @@ html{
     align-content: center;
 }
 
-h3{
+.control-wrapper h3{
     border: solid 2px black;
     border-radius: 10px;
     text-align: center;
     box-shadow: #ff7f50, 5px 3px;    
 }
 
-.control-field{
+.control-wrapper .control-field{
     width: 100%;
+}
+
+.control-wrapper label{
+    display: inline-block;
+    clear: left;
+    width: 100px;
+    text-align: left;
+
+}
+
+.control-wrapper input{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /*STYLING SLIDERS*/
