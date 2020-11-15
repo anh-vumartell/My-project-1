@@ -6,7 +6,7 @@
 }
 
 html{
-    font-size:  14px;
+    font-size:  16px;
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
     position: relative;
@@ -32,6 +32,7 @@ html{
     width: 30vw;  
 }
 
+
 .customization-grid{
     width: 65%;
     display: grid;
@@ -56,4 +57,54 @@ h3{
     border-radius: 10px;
     text-align: center;
     box-shadow: coral 5px 3px;    
+}
+
+.control-field{
+    width: 100%;
+}
+
+/*STYLING SLIDERS*/
+.ui-slider{
+    width: 100%; /*width of the outside container*/
+}
+
+.slider{
+    -webkit-appearance: none; /*overrider default CSS styles*/
+    appearance: none;
+    border-radius: 10px;
+    width: 50%;
+    height: 10px;
+    background: white;
+    opacity: 0.5;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+/*STYLING SLIDER'S THUMB IN CHROME, FIREFOX & IE*/
+.slider::-webkit-slider-thumb{ 
+    -webkit-appearance: none; /*overrider default look*/
+    outline: none;
+    width: 15px;
+    height: 15px;
+    margin-top: -2px;
+    border-radius: 20px;
+    border: solid black 3px;
+    background: white;
+    cursor: pointer;
+
+    box-shadow: 1px 1px 1px #000000;
+}
+
+.slider:hover{
+    opacity: 1; 
+}
+
+/*STYLING SLIDER'S TRACK*/
+.slider::-webkit-slider-runnable-track{
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #0000;
+    background: coral;
+    border-radius: 2px;
+    border: 1px, solid, gray;
 }
