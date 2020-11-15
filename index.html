@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
   </head>
 
   <body>
@@ -50,8 +51,8 @@
         </div>
 
         <div class="ui-slider"> <!--SLIDER-->
-          <label for="font-size">Font size </label>
-            <input type="range" min="12px" max="50px" value="24" class="slider" id="size-range" name="font-size"><span>px</span>       
+          <label for="font-size">Font size</label>
+            <input type="range" min="12px" max="50px" value="24" class="slider" id="range" name="font-size"> <span>px</span>      
         </div>
 
       </div><!--control-wrapper-->
@@ -80,14 +81,14 @@
         <h3>BORDER</h3>
         <div class="ui-slider"> <!--SLIDER-->
           <label for="border-radius">Radius</label>
-          <input type="range" min="10" max="50" class="slider" id="border-radius-range" name="radius">
-          <span>px</span>
+          <input type="range" min="10" max="50" class="slider" id="range" name="radius">
+          <span id="output"></span><span>px</span>
         </div>
 
         <div class="ui-slider"> <!--SLIDER-->
           <label for="border-size">Size</label>
-          <input type="range"  min="10" max="50" class="slider" id="border-size" name="border-size">
-          <span>px</span>
+          <input type="range"  min="10" max="50" class="slider" id="range" name="border-size">
+          <span id="output"></span><span>px</span>
         </div>
         <div class="control-field">
           <label for="border-style">Style</label>
