@@ -4,9 +4,10 @@ The design us created with the following widths
     * Desktop 1440px
 COLORS
 Primary colors:
-    * Background: hsl(30, 3%, 87%); 
-    * Complementary elements: coral hsl(28, 79%, 81%), gray;
-    * Text: black 
+    * Background: #202D58 
+    * Complementary elements: #54649C
+    * Text white #fffffff, #849CF8
+    * Border: #849CF8
 TYPOGRAPHY
     * Font-family: Roboto Mono
     * Font-size: 14px
