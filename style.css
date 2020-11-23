@@ -32,6 +32,28 @@ html{
     width: 30vw;  
 }
 
+.page-wrapper .action{
+    margin-top: 10px;
+}
+.page-wrapper .action a{
+    text-decoration: none;
+}
+.page-wrapper .action button{
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 3px #14213D;
+    transition-duration: 0.3s;
+    background-color: #ffffff;
+}
+.page-wrapper .action button:hover{ /*add button's hover effect*/
+    background-color: #E5E5E5;
+    
+}
+.page-wrapper .action a{
+    color: #000000;
+    text-transform: uppercase;
+}
+
 .customization-grid{
     width: 65%;
     display: grid;
@@ -59,6 +81,7 @@ h3{
     border-radius: 10px;
     text-align: center;  
 }
+
 
 .control-wrapper .col-right{
     display: grid;
