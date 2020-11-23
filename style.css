@@ -10,14 +10,14 @@ html{
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
     position: relative;
-    background-color: white; 
-    color: black;
+    background-color: #202D58 ; 
+    color: #ffffff;
 }
 
 .page-wrapper{
-    font-family: 'Roboto Mono', monospace;
-    background-color: white;
-    color:black;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #202D58;
+    color: #ffffff;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -26,8 +26,8 @@ html{
 }
 
 .page-wrapper .preview{
-    background-color:  hsl(30, 3%, 87%);
-    border: 1px solid gray;
+    background-color: #202D58;
+    border: 1px solid #849CF8 ;
     height: 20vh;
     width: 30vw;  
 }
@@ -37,23 +37,25 @@ html{
     display: grid;
     grid-gap: 30px;
     grid-template-columns: auto auto;
-    background-color: hsl(30, 3%, 87%);
+    background-color: #202D58;
     padding: 30px;
     margin: 10px;
-    border: solid 1px gray; 
+    opacity: 0.8;
     border-radius: 5px;
 }
 .control-wrapper{
-    background-color: hsl(28, 79%, 81%);
+    background-color: #54649C;
+    box-shadow: #202D58 10px 10px;
+    border-radius: 10px;
     padding: 20px;
-    color: black;
+    color: #ffffff;
+    font-weight: 800;
     align-items: center;
     align-content: center;
 }
 
 h3{
-    border: solid 2px black;
+    border: solid 2px #849CF8 ;
     border-radius: 10px;
-    text-align: center;
-    box-shadow: coral 5px 3px;    
+    text-align: center;  
 }
