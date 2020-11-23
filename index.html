@@ -60,21 +60,23 @@
 
       <div class="control-wrapper">
         <h3>COLORS</h3>
-        <div class="control-field">
-          <label for="font-color">Text</label>
-          <input type="color" id="font-color" name="font-color" value="#555555">
-        </div>
-        <div class="control-field">
-          <label for="border-color">Border</label>
-          <input type="color" id="border-color" name="border-color" value="#555555">
-        </div>
-        <div class="">
-          <label for="bg-color">Background</label>
-          <input type="color" id="bg-color" name="bg-color" value="#ffffff">
-        </div>
-        <div class="">
+        <div class="col-right">
+          <div class="control-field">
+            <label for="font-color">Text</label>
+            <input type="color" id="font-color" name="font-color" value="#555555">
+          </div>
+          <div class="control-field">
+            <label for="border-color">Border</label>
+            <input type="color" id="border-color" name="border-color" value="#555555">
+          </div>
+          <div class="control-field">
+            <label for="bg-color">Background</label>
+            <input type="color" id="bg-color" name="bg-color" value="#ffffff">
+          </div>
+          <div class="control-field">
             <label for="hover-color">Hover</label>
             <input type="color" id="hover-color" name="hover-color" value="#555555">
+          </div>
         </div>
       </div><!--control-wrapper-->
 
@@ -109,47 +111,59 @@
 
       <div class="control-wrapper">
         <h3>SHADOW</h3>
-        <h4>Box shadow</h4>
-        <div class="control-field">
-          <label for="box-shadow-h-offset">h-offset</label>
-          <input type="number" id="box-shadow-h-offset" name="box-shadow-h-offset">
-          <span>px</span>
-        </div>
-        <div class="control-field">
-          <label for="box-shadow-v-offset">v-offset</label>
-          <input type="number" id="box-shadow-v-offset" name="box-shadow-v-offset">
-          <span>px</span>
-        </div>
-        <div class="control-field">
-          <label for="box-shadow-spread">Spread</label>
-          <input type="number" id="box-shadow-spread" name="box-shadow-spread">
-          <span>px</span>
-        </div>
-        <div class="control-field">
-          <label for="box-shadow-color">Box shadow</label>
-          <input type="color" id="box-shadow-color" name="box-shadow-color" value="#ffffff">
-        </div>
+        <div class="col-right">
+          <div class="col-shadow-left">
+          <h4>Box shadow</h4>
+          <div class="control-field">
+            <label for="box-shadow-h-offset">h-offset</label>
+            <input type="number" id="box-shadow-h-offset" name="box-shadow-h-offset">
+            <span>px</span>
+          </div>
 
-        <h4>Text shadow</h4>
-        <div class="control-field">
-          <label for="text-shadow-h-offset">h-offset</label>
-          <input type="number" id="text-shadow-h-offset" name="text-shadow-h-offset">
-          <span>px</span>
-        </div>
-        <div class="control-field">
-          <label for="text-shadow-v-offset">v-offset</label>
-          <input type="number" id="text-shadow-v-offset" name="text-shadow-v-offset">
-          <span>px</span>
-        </div>
-        <div class="control-field">
-          <label for="text-shadow-spread">Spread</label>
-          <input type="number" id="text-shadow-spread" name="text-shadow-spread">
-          <span>px</span>
-        </div>
-        <div class="control-field">
-          <label for="text-shadow-color">Text shadow</label>
-          <input type="color" id="text-shadow-color" name="text-shadow-color" value="#ffffff">
-        </div>
+          <div class="control-field">
+            <label for="box-shadow-v-offset">v-offset</label>
+            <input type="number" id="box-shadow-v-offset" name="box-shadow-v-offset">
+            <span>px</span>
+          </div>
+
+          <div class="control-field">
+            <label for="box-shadow-spread">Spread</label>
+            <input type="number" id="box-shadow-spread" name="box-shadow-spread">
+            <span>px</span>
+          </div>
+
+          <div class="control-field">
+            <label for="box-shadow-color">Box shadow</label>
+            <input type="color" id="box-shadow-color" name="box-shadow-color" value="#ffffff">
+          </div>
+          </div> <!--end of shadow's left column-->
+
+          <div class="col-shadow-right">
+          <h4>Text shadow</h4>
+            <div class="control-field">
+              <label for="text-shadow-h-offset">h-offset</label>
+              <input type="number" id="text-shadow-h-offset" name="text-shadow-h-offset">
+              <span>px</span>
+            </div>
+
+            <div class="control-field">
+              <label for="text-shadow-v-offset">v-offset</label>
+              <input type="number" id="text-shadow-v-offset" name="text-shadow-v-offset">
+              <span>px</span>
+            </div>
+
+            <div class="control-field">
+              <label for="text-shadow-spread">Spread</label>
+              <input type="number" id="text-shadow-spread" name="text-shadow-spread">
+              <span>px</span>
+            </div>
+
+            <div class="control-field">
+              <label for="text-shadow-color">Text shadow</label>
+              <input type="color" id="text-shadow-color" name="text-shadow-color" value="#ffffff">
+            </div>
+          </div><!--end of shadow's right column-->
+      </div>
       </div><!--control-wrapper-->
 
     </div><!--customization-->
