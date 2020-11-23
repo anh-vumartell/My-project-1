@@ -59,3 +59,190 @@ h3{
     border-radius: 10px;
     text-align: center;  
 }
+
+.control-wrapper .col-right{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+.control-wrapper h3{
+    border: solid 2px black;
+    border-radius: 10px;
+    text-align: center;    
+}
+
+.control-wrapper .control-field{
+    width: 100%;
+}
+
+
+.control-wrapper label{
+    display: inline-block;
+    clear: left;
+    width: 100px;
+    text-align: left;
+
+}
+
+.control-wrapper input{
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*STYLING SLIDERS*/
+.ui-slider{
+    width: 100%; /*width of the outside container*/
+}
+
+.slider{
+    -webkit-appearance: none; /*overrider default CSS styles*/
+    appearance: none;
+    border-radius: 10px;
+    width: 50%;
+    height: 10px;
+    background: #ffffff;
+    opacity: 0.5;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+/*STYLING SLIDER'S THUMB IN CHROME, FIREFOX & IE*/
+.slider::-webkit-slider-thumb{ 
+    -webkit-appearance: none; /*overrider default look*/
+    outline: none;
+    width: 15px;
+    height: 15px;
+    margin-top: -2px;
+    border-radius: 20px;
+    border: solid #000000 3px;
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000;
+}
+
+.slider::-moz-range-thumb{ /*for Firefox*/
+    width: 15px;
+    height: 15px; 
+    border: solid #000000 3px;
+    border-radius: 20px;
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000;
+}
+.slider::-ms-thumb{ /*for IE*/
+    width: 15px;
+    height: 15px; 
+    border: solid #000000 3px;
+    border-radius: 20px;
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000;
+}
+
+.slider:hover{
+    opacity: 1; 
+}
+
+/*STYLING SLIDER'S TRACK*/
+.slider::-webkit-slider-runnable-track{ /*for Webkit*/
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #0000;
+    background: #849CF8;
+    border-radius: 2px;
+    border: 1px, solid #000000;
+}
+.slider:focus::-webkit-slider-runnable-track{
+    background: #849CF8;
+}
+
+.slider::-moz-range-track{ /*for Firefox*/
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #0000;
+    background: #849CF8;
+    border-radius: 2px;
+    border: 1px, solid, #000000;
+}
+.slider::-ms-track{ /*for IE*/
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #0000;
+    background: #849CF8;
+    border-radius: 2px;
+    border: 1px, solid, #000000;
+    border-width: 10px 0;
+    color: transparent;
+}
+
+/* MEDIA QUERIES FOR MOBILE*/
+@media only screen and (max-width: 375px){
+    /*On screens that are 375px or less, set these styles*/
+    .page-wrapper{
+        min-width: 20vw;
+                
+    }
+    .page-wrapper h1{
+       text-align: center; 
+    }
+    .page-wrapper .customization-grid{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 10px 10px 10px 10px;
+
+    }
+
+    .page-wrapper .preview{
+        width: 80vw;
+    }
+    .page-wrapper .control-wrapper{
+        min-width: 30vw;
+    }
+
+    .control-wrapper label{
+        width: 80px;
+    }
+
+    .control-wrapper .col-right{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+}
+/*@media only screen and (max-width: 992px){
+    .page-wrapper{
+        min-width: 20vw;
+                
+    }
+    .page-wrapper h1{
+       text-align: center; 
+    }
+    .page-wrapper .customization-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 10px 10px 10px 10px;
+
+    }
+
+    .page-wrapper .preview{
+        width: 80vw;
+    }
+    .page-wrapper .control-wrapper{
+        min-width: 30vw;
+    }
+
+    .control-wrapper label{
+        width: 100px;
+        display: block;
+    }
+
+    .control-wrapper .col-right{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+}*/
