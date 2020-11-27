@@ -70,7 +70,7 @@ html{
 }
 .control-wrapper{
     background-color: #54649C;
-    box-shadow: #202D58 10px 10px;
+    box-shadow: 10px 6px #14213D;
     border-radius: 10px;
     padding: 20px;
     color: #ffffff;
@@ -79,11 +79,6 @@ html{
     align-content: center;
 }
 
-h3{
-    border: solid 2px #849CF8 ;
-    border-radius: 10px;
-    text-align: center;  
-}
 
 
 .control-wrapper .col-right{
@@ -95,9 +90,24 @@ h3{
 .control-wrapper h3{
     border: solid 2px black;
     border-radius: 10px;
-    text-align: center;    
+    text-align: left;    
+    padding-left: 20px;
+    background-color:  #849CF8;
 }
 
+.control-wrapper .font-style{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.control-wrapper .font-style button{
+    width: 50px;
+    background-color: #849CF8;
+    border-radius: 15px;
+    color: #ffffff;
+    font-weight: 600;
+
+}
 .control-wrapper .control-field{
     width: 100%;
 }
@@ -208,15 +218,14 @@ h3{
 /* MEDIA QUERIES FOR MOBILE*/
 @media only screen and (max-width: 375px){
     /*On screens that are 375px or less, set these styles*/
-    .page-wrapper{
-        min-width: 20vw;
-                
-    }
+
     .page-wrapper h1{
        text-align: center; 
     }
     .page-wrapper .customization-grid{
         display: grid;
+        min-width: 100vw;
+        margin: 10px;
         grid-template-columns: auto;
         margin: 10px 10px 10px 10px;
 
@@ -225,12 +234,10 @@ h3{
     .page-wrapper .preview{
         width: 80vw;
     }
-    .page-wrapper .control-wrapper{
-        min-width: 30vw;
-    }
 
     .control-wrapper label{
         width: 80px;
+        display: inline-block;
     }
 
     .control-wrapper .col-right{
