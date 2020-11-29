@@ -23,20 +23,28 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .page-wrapper .preview{
     background-color: #202D58;
     border: 1px solid #849CF8 ;
     height: 20vh;
-    width: 30vw;  
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+
 }
 
 .page-wrapper .action{
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: flex;
+    justify-items: center;
+    
 }
 
 .page-wrapper .action button{
@@ -58,21 +66,18 @@ html{
 }
 
 .customization-grid{
-    width: 65%;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: auto auto;
     background-color: #202D58;
-    padding: 30px;
-    margin: 10px;
     opacity: 0.8;
     border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 20px;
 }
-.control-wrapper{
+.col{
     background-color: #54649C;
     box-shadow: 10px 6px #14213D;
     border-radius: 10px;
     padding: 20px;
+    margin: 20px;
     color: #ffffff;
     font-weight: 800;
     align-items: center;
@@ -81,26 +86,19 @@ html{
 
 
 
-.control-wrapper .col-right{
+/*.control-wrapper .col-right{
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 10px;
-}
+}*/
 
-.control-wrapper h3{
-    border: solid 2px black;
-    border-radius: 10px;
-    text-align: left;    
-    padding-left: 20px;
-    background-color:  #849CF8;
-}
 
-.control-wrapper .font-style{
+.col.font-style{
     display: flex;
     flex-direction: row;
     margin-top: 10px;
 }
-.control-wrapper .font-style button{
+.col .font-style button{
     width: 50px;
     background-color: #849CF8;
     border-radius: 15px;
@@ -108,12 +106,12 @@ html{
     font-weight: 600;
 
 }
-.control-wrapper .control-field{
+.col .control-field{
     width: 100%;
 }
 
 
-.control-wrapper label{
+.col label{
     display: inline-block;
     clear: left;
     width: 100px;
@@ -121,7 +119,7 @@ html{
 
 }
 
-.control-wrapper input{
+.col input{
     display: inline-block;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -235,12 +233,12 @@ html{
         width: 80vw;
     }
 
-    .control-wrapper label{
+    .col label{
         width: 80px;
         display: inline-block;
     }
 
-    .control-wrapper .col-right{
+    .col .col-right{
         display: grid;
         grid-template-columns: auto;
     }
