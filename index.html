@@ -28,145 +28,163 @@
     </div><!--action-->
 
     <div class="customization-grid">
-      <div class="control-wrapper">
-        <h3>TEXT</h3>
-        <div class="control-field">
-          <label for="btn-text">Text</label>
-          <input type="text" id="btn-text" name="btn-text">
-        </div>
+      <div class="row">
+        <div class="col" id="first-col">
+          <h3>TEXT</h3>
+          <div class="control-field">
+            <label for="btn-text">Text</label>
+            <input type="text" id="btn-text" name="btn-text">
+          </div>
 
-        <div class="control-field">
-          <label for="font-family">Font</label>
-          <select name="font-family" id="font-family">
-            <option value="arial">Arial</option>
-            <option value="open-sans">Open Sans</option>
-            <option value="montserrat">Montserrat</option>
-            <option value="lato">Lato</option>
-            <option value="raleway">Raleway</option>
-            <option value="roboto">Roboto</option>
-            <option value="load-more">Load other Google font</option>
-          </select>
+          <div class="control-field">
+            <label for="font-family">Font</label>
+            <select name="font-family" id="font-family">
+              <option value="arial">Arial</option>
+              <option value="open-sans">Open Sans</option>
+              <option value="montserrat">Montserrat</option>
+              <option value="lato">Lato</option>
+              <option value="raleway">Raleway</option>
+              <option value="roboto">Roboto</option>
+              <option value="load-more">Load other Google font</option>
+            </select>
+
           <div class="font-style">
             <button id="bold"><b>B</b></button>
             <button id="underline"><u>U</u></button>
             <button id="italics"><i>I</i></button>
           </div>
-        </div>
+          </div>
 
-        <div class="ui-slider"> <!--SLIDER-->
-          <label for="font-size">Font size</label>
+          <div class="ui-slider"> <!--SLIDER-->
+            <label for="font-size">Font size</label>
             <input type="range" min="12px" max="50px" value="24" class="slider" id="range" name="font-size"> <span>px</span>      
-        </div>
-
-      </div><!--control-wrapper-->
-
-      <div class="control-wrapper">
-        <h3>COLORS</h3>
-        <div class="col-right">
-          <div class="control-field">
-            <label for="font-color">Text</label>
-            <input type="color" id="font-color" name="font-color" value="#555555">
           </div>
-          <div class="control-field">
-            <label for="border-color">Border</label>
-            <input type="color" id="border-color" name="border-color" value="#555555">
-          </div>
-          <div class="control-field">
-            <label for="bg-color">Background</label>
-            <input type="color" id="bg-color" name="bg-color" value="#ffffff">
-          </div>
-          <div class="control-field">
-            <label for="hover-color">Hover</label>
-            <input type="color" id="hover-color" name="hover-color" value="#555555">
-          </div>
-        </div>
-      </div><!--control-wrapper-->
+      
+        </div><!--end-of-column-->
 
-      <div class="control-wrapper">
-        <h3>BORDER</h3>
-        <div class="ui-slider"> <!--SLIDER-->
-          <label for="border-radius">Radius</label>
-          <input type="range" min="10" max="50" class="slider" id="range" name="radius">
-          <span id="output"></span><span>px</span>
-        </div>
-
-        <div class="ui-slider"> <!--SLIDER-->
-          <label for="border-size">Size</label>
-          <input type="range"  min="10" max="50" class="slider" id="range" name="border-size">
-          <span id="output"></span><span>px</span>
-        </div>
-        <div class="control-field">
-          <label for="border-style">Style</label>
-          <select name="font-family" id="font-family">
-            <option value="dotted">Dotted</option>
-            <option value="dashed">Dashed</option>
-            <option value="solid">Solid</option>
-            <option value="double">Double</option>
-            <option value="groove">Groove</option>
-            <option value="ridge">Ridge</option>
-            <option value="inset">Inset</option>
-            <option value="outset">Outset</option>
-            <option value="none">None</option>
-          </select>
-        </div>
-      </div><!--control-wrapper-->
-
-      <div class="control-wrapper">
-        <h3>SHADOW</h3>
-        <div class="col-right">
-          <div class="col-shadow-left">
-          <h4>Box shadow</h4>
-          <div class="control-field">
-            <label for="box-shadow-h-offset">h-offset</label>
-            <input type="number" id="box-shadow-h-offset" name="box-shadow-h-offset">
-            <span>px</span>
-          </div>
-
-          <div class="control-field">
-            <label for="box-shadow-v-offset">v-offset</label>
-            <input type="number" id="box-shadow-v-offset" name="box-shadow-v-offset">
-            <span>px</span>
-          </div>
-
-          <div class="control-field">
-            <label for="box-shadow-spread">Spread</label>
-            <input type="number" id="box-shadow-spread" name="box-shadow-spread">
-            <span>px</span>
-          </div>
-
-          <div class="control-field">
-            <label for="box-shadow-color">Box shadow</label>
-            <input type="color" id="box-shadow-color" name="box-shadow-color" value="#ffffff">
-          </div>
-          </div> <!--end of shadow's left column-->
-
-          <div class="col-shadow-right">
-          <h4>Text shadow</h4>
+        <div class="col" id="second-col">
+          <h3>COLORS</h3>
+          <div class="col-right">
             <div class="control-field">
-              <label for="text-shadow-h-offset">h-offset</label>
-              <input type="number" id="text-shadow-h-offset" name="text-shadow-h-offset">
+             <label for="font-color">Text</label>
+              <input type="color" id="font-color" name="font-color" value="#555555">
+            </div>
+
+            <div class="control-field">
+              <label for="border-color">Border</label>
+              <input type="color" id="border-color" name="border-color" value="#555555">
+            </div>
+
+            <div class="control-field">
+              <label for="bg-color">Background</label>
+              <input type="color" id="bg-color" name="bg-color" value="#ffffff">
+            </div>
+
+            <div class="control-field">
+              <label for="hover-color">Hover</label>
+              <input type="color" id="hover-color" name="hover-color" value="#555555">
+            </div>
+          </div>
+        </div><!--end-of-column-->
+        
+      </div><!--end-of-first-row-->
+
+      <div class="w-200"></div>
+
+      <div class="row">
+        <div class="col" id="first-col">
+          <h3>BORDER</h3>
+          <div class="ui-slider"> <!--SLIDER-->
+            <label for="border-radius">Radius</label>
+            <input type="range" min="10" max="50" class="slider" id="range" name="radius">
+            <span id="output"></span><span>px</span>
+          </div>
+
+          <div class="ui-slider"> <!--SLIDER-->
+            <label for="border-size">Size</label>
+            <input type="range"  min="10" max="50" class="slider" id="range" name="border-size">
+            <span id="output"></span><span>px</span>
+          </div>
+
+          <div class="control-field">
+            <label for="border-style">Style</label>
+            <select name="font-family" id="font-family">
+              <option value="dotted">Dotted</option>
+              <option value="dashed">Dashed</option>
+              <option value="solid">Solid</option>
+              <option value="double">Double</option>
+              <option value="groove">Groove</option>
+              <option value="ridge">Ridge</option>
+              <option value="inset">Inset</option>
+              <option value="outset">Outset</option>
+              <option value="none">None</option>
+            </select>
+          </div> <!--end-of-columns-->
+        </div>
+
+        <div class="col" id="second-col">
+          <h3>SHADOW</h3>
+          <div class="col-right">
+            <div class="col-shadow-left">
+            <h4>Box shadow</h4>
+
+            <div class="control-field">
+              <label for="box-shadow-h-offset">h-offset</label>
+              <input type="number" id="box-shadow-h-offset" name="box-shadow-h-offset">
               <span>px</span>
             </div>
 
             <div class="control-field">
-              <label for="text-shadow-v-offset">v-offset</label>
-              <input type="number" id="text-shadow-v-offset" name="text-shadow-v-offset">
+              <label for="box-shadow-v-offset">v-offset</label>
+              <input type="number" id="box-shadow-v-offset" name="box-shadow-v-offset">
               <span>px</span>
             </div>
 
             <div class="control-field">
-              <label for="text-shadow-spread">Spread</label>
-              <input type="number" id="text-shadow-spread" name="text-shadow-spread">
+              <label for="box-shadow-spread">Spread</label>
+              <input type="number" id="box-shadow-spread" name="box-shadow-spread">
               <span>px</span>
             </div>
 
             <div class="control-field">
-              <label for="text-shadow-color">Text shadow</label>
-              <input type="color" id="text-shadow-color" name="text-shadow-color" value="#ffffff">
+              <label for="box-shadow-color">Box shadow</label>
+              <input type="color" id="box-shadow-color" name="box-shadow-color" value="#ffffff">
             </div>
-          </div><!--end of shadow's right column-->
-      </div>
-      </div><!--control-wrapper-->
+            </div> <!--end of shadow's left column-->
+
+              <div class="col-shadow-right">
+              <h4>Text shadow</h4>
+              <div class="control-field">
+                <label for="text-shadow-h-offset">h-offset</label>
+                <input type="number" id="text-shadow-h-offset" name="text-shadow-h-offset">
+                <span>px</span>
+              </div>
+
+              <div class="control-field">
+                <label for="text-shadow-v-offset">v-offset</label>
+                <input type="number" id="text-shadow-v-offset" name="text-shadow-v-offset">
+                <span>px</span>
+              </div>
+
+              <div class="control-field">
+                <label for="text-shadow-spread">Spread</label>
+                <input type="number" id="text-shadow-spread" name="text-shadow-spread">
+                <span>px</span>
+              </div>
+
+              <div class="control-field">
+                <label for="text-shadow-color">Text shadow</label>
+                <input type="color" id="text-shadow-color" name="text-shadow-color" value="#ffffff">
+              </div>
+              </div><!--end of shadow's right column-->
+          </div>
+        </div>
+
+      </div><!--end-of-second-row-->
+
+      
+        
+      
 
     </div><!--customization-->
 
