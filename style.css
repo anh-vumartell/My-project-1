@@ -7,17 +7,17 @@
 
 html{
     font-size:  1rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     position: relative;
-    background-color: #202D58 ; 
-    color: #ffffff;
+    background-color: #2ec194; 
+    color: #000000;
 }
 
 .page-wrapper{
-    font-family: 'Montserrat', sans-serif;
-    background-color: #202D58;
-    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #2ec194;
+    color: #000000;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -26,9 +26,11 @@ html{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
+.page-wrapper h1{
+    text-transform: uppercase;
+}
 .page-wrapper .preview{
-    background-color: #202D58;
+    background-color: #ffffff;
     border: 1px solid #849CF8;
     width: 50%;
     height: 20vh;
@@ -54,22 +56,20 @@ html{
     border-radius: 10px;
     box-shadow: 2px 3px #14213D;
     transition-duration: 0.3s;
-    background-color: #849CF8;
+    background-color: #ffffff;
 }
 .page-wrapper .action button:hover{ /*add button's hover effect*/
-    background-color: #6C7395;
+    background-color: #2ce194;
     
 }
 .page-wrapper .action a{
-    color: #ffffff;
+    color: #000000;
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
 }
 
 .customization-grid{
-    background-color: #202D58;
-    opacity: 0.8;
     border-radius: 5px;
     padding-left: 15px;
     padding-right: 20px;
@@ -78,17 +78,18 @@ html{
     margin: 10px 10px 10px 10px;
 }
 .col{
-    background-color: #54649C;
-    box-shadow: 10px 6px #14213D;
-    border-radius: 10px;
+    background-color: #ffffff;
+    border-radius: 5%;
     padding: 20px;
     margin: 20px;
-    color: #ffffff;
     font-weight: 800;
     align-items: center;
     align-content: center;
+    box-shadow: 20px 10px 10px rgba(0,0,0,0.3);
 }
-
+.col h3{
+    text-align:  center;
+}
 
 .customization-grid .font-style{
     display: flex;
@@ -97,7 +98,8 @@ html{
 }
 .customization-grid .font-style button{
     width: 50px;
-    background-color: #849CF8;
+    margin: 5px;
+    background-color: #2ec194;
     border-radius: 15px;
     color: #ffffff;
     font-weight: 600;
@@ -183,12 +185,12 @@ html{
     height: 10px;
     cursor: pointer;
     box-shadow: 1px 1px 1px #0000;
-    background: #849CF8;
+    background: #2ec194;
     border-radius: 2px;
     border: 1px, solid #000000;
 }
 .slider:focus::-webkit-slider-runnable-track{
-    background: #849CF8;
+    background: #2ec194;
 }
 
 .slider::-moz-range-track{ /*for Firefox*/
@@ -196,7 +198,7 @@ html{
     height: 10px;
     cursor: pointer;
     box-shadow: 1px 1px 1px #0000;
-    background: #849CF8;
+    background: #2ec194;
     border-radius: 2px;
     border: 1px, solid, #000000;
 }
@@ -205,7 +207,7 @@ html{
     height: 10px;
     cursor: pointer;
     box-shadow: 1px 1px 1px #0000;
-    background: #849CF8;
+    background: #2ec194;
     border-radius: 2px;
     border: 1px, solid, #000000;
     border-width: 10px 0;
