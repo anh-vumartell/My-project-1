@@ -28,6 +28,17 @@ html{
 }
 .page-wrapper h1{
     text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #919191,
+                 1px 2px 1px #919191,
+                 1px 3px 1px #919191,
+                 1px 4px 1px #919191,
+                 1px 5px 1px #919191,
+            1px 16px 6px rgba(16,16,16,0.4),
+            1px 20px 10px rgba(16,16,16, 0.2),
+            1px 22px 30px rgba(16, 16, 16, 0.2),
+            1px 28px 55px rgba(16,16,16,0.4)     
+                 
 }
 .page-wrapper .preview{
     background-color: #ffffff;
