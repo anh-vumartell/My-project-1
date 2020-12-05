@@ -112,20 +112,22 @@ html{
 }
 
 
-.col label{
+.customization-grid label{
     display: inline-flex;
     clear: left;
-    width: 100px;
     text-align: left;
 
 }
 
 .col input{
     display: inline-block;
+    width: 80%;
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
+.col label{
+    display: block;
+}
 /*STYLING SLIDERS*/
 .ui-slider{
     width: 100%; /*width of the outside container*/
@@ -240,8 +242,7 @@ html{
     }
 
     .col label{
-        width: 100%;
-        display: inline-block;
+        display: block;
     }
 
 
@@ -252,10 +253,7 @@ html{
         grid-template-columns: auto auto;
         grid-gap: 10px;
     }
-    .control-field label{
-        width: 100px;
-        display: block;
-    }
+    
 
 
 }
