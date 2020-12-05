@@ -3,7 +3,6 @@
     * Mobile 600px
     * Desktop 992px
 # COLORS
-# Primary colors:
     * Background: #2ec194
     * Complementary elements: white #ffffff
     * Text black #000000
