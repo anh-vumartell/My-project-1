@@ -97,46 +97,36 @@ html{
 }
 
 
-.customization-grid .font-style{
+.container .font-style{
     display: flex;
     flex-direction: row;
     padding-top: 10px;
 }
-.customization-grid .font-style button{
+.container .font-style button{
     width: 50px;
-    margin: 5px;
+    margin: 10px;
     background-color: #2ec194;
     border-radius: 15px;
     color: #ffffff;
     font-weight: 600;
 
 }
-.customization-grid .control-field{
+
+
+.col label{
     display: inline-block;
-    width: 100%;
-    align-items: flex-start;
-}
-
-
-.customization-grid label{
-    display: inline-flex;
-    clear: left;
+    width: 70px;
     text-align: left;
-
 }
 
 .col input{
     display: inline-block;
     width: 80%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
-.col label{
-    display: block;
-}
+
+
 /*STYLING SLIDERS*/
-
-
 .slider{
     -webkit-appearance: none; /*overrider default CSS styles*/
     appearance: none;
@@ -223,31 +213,23 @@ html{
 /* MEDIA QUERIES FOR MOBILE*/
 @media only screen and (max-width: 600px){
     /*On screens that are 600px or less, set these styles*/
-
     .page-wrapper h1{
-       text-align: center; 
+        text-align: center;
     }
-    .page-wrapper .customization-grid{
-        display: grid;
-        min-width: 100vw;
-        margin: 10px;
-        grid-template-columns: auto;
-        margin: 10px 10px 10px 10px;
-
+    .page-wrapper .container{
+        margin: 20px;
     }
 
     .page-wrapper .preview{
         width: 80vw;
     }
+
     .page-wrapper .action button{
         width: 50%;
         font-size: 0.8rem;
         margin: 10px;
     }
 
-    .col label{
-        display: block;
-    }
 
 
 }
