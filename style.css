@@ -85,7 +85,7 @@ html{
     padding-right: 20px;
     margin: 10px;
 }
-.col{
+.page-col{
     background-color: #ffffff;
     border-radius: 5%;
     padding: 20px;
@@ -113,17 +113,18 @@ html{
 }
 
 
-.col label{
+.page-col label{
     display: inline-block;
     width: 70px;
     text-align: left;
 }
 
-.col input{
+.page-col input{
     display: inline-block;
     width: 80%;
     margin-bottom: 20px;
 }
+
 
 
 /*STYLING SLIDERS*/
@@ -234,11 +235,11 @@ html{
 
 }
 @media only screen and (min-width: 992px){
-    .col .col-right{
+   /* .page-col .col-right{
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 10px;
-    }
+    }*/
     
 
 
