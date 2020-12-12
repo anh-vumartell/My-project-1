@@ -27,8 +27,8 @@
     </div><!--action-->
 
     <div class="container">
-      <div class="row">
-        <div class="col">
+      <div class="row page-row">
+        <div class="col-md page-col">
           <h3 class="text-center">TEXT</h3>
           <div class="control-field">
             <label for="btn-text">Text</label>
@@ -59,37 +59,49 @@
             <input type="range" min="12px" max="50px" value="24" class="slider" id="range" name="font-size"> <span>px</span>  
           </div>
       
-        </div><!--end-of-column-->
+        </div>
 
-        <div class="col">
+        <div class="col page-col container card-container">
           <h3 class="text-center">COLORS</h3>
-          <div class="col-right">
-            <div class="control-field">
-             <label for="font-color">Text</label>
-              <input type="color" id="font-color" name="font-color" value="#555555">
+
+          <div class="row card-row">
+            <div class="col card-col">
+              <div class="control-field">
+                <label for="font-color">Text</label>
+                 <input type="color" id="font-color" name="font-color" value="#555555">
+              </div>
             </div>
 
-            <div class="control-field">
-              <label for="border-color">Border</label>
-              <input type="color" id="border-color" name="border-color" value="#555555">
-            </div>
+            <div class="col card-col">
+              <div class="control-field">
+                <label for="border-color">Border</label>
+                <input type="color" id="border-color" name="border-color" value="#555555">
+              </div>
+            </div>            
+          </div> <!--end-of-card-row-->
 
-            <div class="control-field">
-              <label for="bg-color">Background</label>
-              <input type="color" id="bg-color" name="bg-color" value="#ffffff">
+          <div class="row card-row">
+            <div class="col card-col">
+              <div class="control-field">
+                <label for="bg-color">Background</label>
+                <input type="color" id="bg-color" name="bg-color" value="#ffffff">
+              </div>
             </div>
+          
+            <div class="col card-col">
+              <div class="control-field">
+                <label for="hover-color">Hover</label>
+                <input type="color" id="hover-color" name="hover-color" value="#555555">
+              </div>
+            </div>
+          </div><!--end-of-card-row-->
 
-            <div class="control-field">
-              <label for="hover-color">Hover</label>
-              <input type="color" id="hover-color" name="hover-color" value="#555555">
-            </div>
-          </div>
-        </div><!--end-of-column-->
+        </div><!--end-of-card-container-->
         
       </div><!--end-of-first-row-->
 
-      <div class="row">
-        <div class="col">
+      <div class="row page-row">
+        <div class="col-md page-col">
           <h3 class="text-center">BORDER</h3>
           <div class="control-field"> <!--SLIDER-->
             <label for="border-radius">Radius</label>
@@ -119,62 +131,65 @@
           </div> <!--end-of-columns-->
         </div>
 
-        <div class="col">
+        <div class="col page-col container card-container">
           <h3 class="text-center">SHADOW</h3>
-          <div class="col-right">
-            <div class="col-shadow-left">
-            <h4>Box shadow</h4>
+          <div class="row card-row">
+            <div class="col card-col">
+              <h4>Box shadow</h4>
 
-            <div class="control-field">
-              <label for="box-shadow-h-offset">h-offset</label>
-              <input type="number" id="box-shadow-h-offset" name="box-shadow-h-offset">
-              <span>px</span>
-            </div>
-
-            <div class="control-field">
-              <label for="box-shadow-v-offset">v-offset</label>
-              <input type="number" id="box-shadow-v-offset" name="box-shadow-v-offset">
-              <span>px</span>
-            </div>
-
-            <div class="control-field">
-              <label for="box-shadow-spread">Spread</label>
-              <input type="number" id="box-shadow-spread" name="box-shadow-spread">
-              <span>px</span>
-            </div>
-
-            <div class="control-field">
-              <label for="box-shadow-color">Box shadow</label>
-              <input type="color" id="box-shadow-color" name="box-shadow-color" value="#ffffff">
-            </div>
-            </div> <!--end of shadow's left column-->
-
-              <div class="col-shadow-right">
-              <h4>Text shadow</h4>
               <div class="control-field">
-                <label for="text-shadow-h-offset">h-offset</label>
-                <input type="number" id="text-shadow-h-offset" name="text-shadow-h-offset">
+                <label for="box-shadow-h-offset">h-offset</label>
+                <input type="number" id="box-shadow-h-offset" name="box-shadow-h-offset">
                 <span>px</span>
               </div>
 
               <div class="control-field">
-                <label for="text-shadow-v-offset">v-offset</label>
-                <input type="number" id="text-shadow-v-offset" name="text-shadow-v-offset">
+                <label for="box-shadow-v-offset">v-offset</label>
+                <input type="number" id="box-shadow-v-offset" name="box-shadow-v-offset">
                 <span>px</span>
               </div>
 
               <div class="control-field">
-                <label for="text-shadow-spread">Spread</label>
-                <input type="number" id="text-shadow-spread" name="text-shadow-spread">
+                <label for="box-shadow-spread">Spread</label>
+                <input type="number" id="box-shadow-spread" name="box-shadow-spread">
                 <span>px</span>
               </div>
 
               <div class="control-field">
-                <label for="text-shadow-color">Text shadow</label>
-                <input type="color" id="text-shadow-color" name="text-shadow-color" value="#ffffff">
+                <label for="box-shadow-color">Box shadow</label>
+                <input type="color" id="box-shadow-color" name="box-shadow-color" value="#ffffff">
               </div>
-              </div><!--end of shadow's right column-->
-          </div>
+            </div> <!--end-of-card-col-->
+          </div> <!--end-of-card-row-->
+
+          <div class="row card-row">
+              <div class="col card-col">
+                <h4>Text shadow</h4>
+
+                <div class="control-field">
+                  <label for="text-shadow-h-offset">h-offset</label>
+                  <input type="number" id="text-shadow-h-offset" name="text-shadow-h-offset">
+                  <span>px</span>
+                </div>
+
+                <div class="control-field">
+                  <label for="text-shadow-v-offset">v-offset</label>
+                  <input type="number" id="text-shadow-v-offset" name="text-shadow-v-offset">
+                  <span>px</span>
+                </div>
+
+                <div class="control-field">
+                  <label for="text-shadow-spread">Spread</label>
+                  <input type="number" id="text-shadow-spread" name="text-shadow-spread">
+                  <span>px</span>
+                </div>
+
+                <div class="control-field">
+                  <label for="text-shadow-color">Text shadow</label>
+                  <input type="color" id="text-shadow-color" name="text-shadow-color" value="#ffffff">
+                </div>
+              </div><!--end-of-card-col-->
+          </div><!--end-of-card-row-->
         </div>
 
       </div><!--end-of-second-row-->
