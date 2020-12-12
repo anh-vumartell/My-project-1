@@ -80,13 +80,10 @@ html{
     text-decoration: none;
 }
 
-.customization-grid{
-    border-radius: 5px;
+.container{
     padding-left: 15px;
     padding-right: 20px;
-    display: grid;
-    grid-template-columns: auto auto;
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
 }
 .col{
     background-color: #ffffff;
@@ -98,9 +95,7 @@ html{
     align-content: center;
     box-shadow: 20px 10px 10px rgba(0,0,0,0.3);
 }
-.col h3{
-    text-align:  center;
-}
+
 
 .customization-grid .font-style{
     display: flex;
@@ -140,9 +135,7 @@ html{
     display: block;
 }
 /*STYLING SLIDERS*/
-.ui-slider{
-    width: 100%; /*width of the outside container*/
-}
+
 
 .slider{
     -webkit-appearance: none; /*overrider default CSS styles*/
