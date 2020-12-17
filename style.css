@@ -4,7 +4,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 html{
     font-size:  1em;
     font-family: 'Josefin Sans', sans-serif;
@@ -13,7 +12,6 @@ html{
     background-color: #2ec194; 
     color: #000000;
 }
-
 .page-wrapper{
     font-family: 'Josefin Sans', sans-serif;
     background-color: #2ec194;
@@ -49,18 +47,14 @@ html{
     align-items: center;
     justify-content: center;
     padding: 20px;
-
 }
-
 .page-wrapper .action{
     margin-top: 20px;
     margin-left: 8px;
     margin-right: 8px;
     display: flex;
-    justify-items: center;
-    
+    justify-items: center; 
 }
-
 .page-wrapper .action button{
     width: 120px;
     margin: 20px; 
@@ -95,8 +89,6 @@ html{
     align-content: center;
     box-shadow: 20px 10px 10px rgba(0,0,0,0.3);
 }
-
-
 .container .font-style{
     display: flex;
     flex-direction: row;
@@ -109,24 +101,17 @@ html{
     border-radius: 15px;
     color: #ffffff;
     font-weight: 600;
-
 }
-
-
 .page-col label{
     display: inline-block;
     width: 70px;
     text-align: left;
 }
-
 .page-col input{
     display: inline-block;
     width: 80%;
     margin-bottom: 20px;
 }
-
-
-
 /*STYLING SLIDERS*/
 .slider{
     -webkit-appearance: none; /*overrider default CSS styles*/
@@ -171,11 +156,9 @@ html{
     cursor: pointer;
     box-shadow: 1px 1px 1px #000000;
 }
-
 .slider:hover{
     opacity: 1; 
 }
-
 /*STYLING SLIDER'S TRACK*/
 .slider::-webkit-slider-runnable-track{ /*for Webkit*/
     width: 100%;
@@ -189,7 +172,6 @@ html{
 .slider:focus::-webkit-slider-runnable-track{
     background: #2ec194;
 }
-
 .slider::-moz-range-track{ /*for Firefox*/
     width: 100%;
     height: 10px;
@@ -210,7 +192,6 @@ html{
     border-width: 10px 0;
     color: transparent;
 }
-
 /* MEDIA QUERIES FOR MOBILE*/
 @media only screen and (max-width: 600px){
     /*On screens that are 600px or less, set these styles*/
@@ -220,27 +201,12 @@ html{
     .page-wrapper .container{
         margin: 20px;
     }
-
     .page-wrapper .preview{
         width: 80vw;
     }
-
     .page-wrapper .action button{
         width: 50%;
         font-size: 0.8rem;
         margin: 10px;
     }
-
-
-
-}
-@media only screen and (min-width: 992px){
-   /* .page-col .col-right{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 10px;
-    }*/
-    
-
-
 }
